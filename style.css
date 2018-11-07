@@ -1,0 +1,64 @@
+div{
+  width: 900px;
+  height: 500px;
+  padding: 10px;
+  margin-left: 15%;
+}
+body{
+  margin-left: 20px;
+  font-size: 20px;
+}
+h2{
+  color: white;
+  background-color: #008CBA;
+  padding: 10px;
+}
+form{
+  padding-left: 10px;
+}
+p,span{
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+}
+td.check{
+  padding: 0px 10px 0px 0px;
+}
+th,td {
+  padding: 5px 60px 10px 0px;
+}
+.textBox{
+  width: 60px;
+  height: 30px;
+  font-size: 16px;
+  border: solid;
+  border-radius: 10px;
+  border-color: silver;
+  border-width: thin;
+}
+.paymentTB{
+  margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  border: solid;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 20px;
+  border-color: silver;
+  border-width: thin;
+}
+#bananaWarning,#appleWarning,#orangeWarning,#nameWarning,#discoverWarning{
+  color: red;
+}
+.button{
+ margin-top: 20px;
+ background-color: #008CBA;
+ border: none;
+ color: white;
+ padding: 15px 100px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ border-radius: 12px;
+ font-size: 16px;
+}

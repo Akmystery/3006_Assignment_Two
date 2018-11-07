@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <script src="checkForm.js"></script>
+</head>
+
+
+<body>
+  <div>
+  <h2 class="Title">CZ 3006 Assignment</h2>
+  <form name="form" action="action.php" method="post" onsubmit="return checkInput()">
+    <table>
+      <tr>
+        <td class="check">Name</td>
+        <td class="check"><input type="text" class="textBox" name="nameTextBox" style="width: 180px; margin-left: 50px; margin-bottom: 10px;"></td>
+        <td class="check"><p id="nameWarning"></p></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><label for="appleTextBox">Apple</label></td>
+        <td><input type="text" class="textBox" name="appleTextBox" onchange="validateInput();">
+        </td>
+        <td><p id="appleWarning"></p></td>
+      </tr>
+      <tr>
+        <td><label for="orangeTextBox">Orange</label></td>
+        <td><input type="text" class="textBox" name="orangeTextBox" onchange="validateInput();"></td>
+        <td><p id="orangeWarning"></p></td>
+      </tr>
+      <tr>
+        <td><label for="bananaTextBox">Banana</label></td>
+        <td><input type="text" class="textBox" name="bananaTextBox" onchange="validateInput();"></td>
+        <td><p id="bananaWarning"></p></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><label for="totalCostTextBox">Total Cost</label></td>
+        <td>$<input type="text" class="textBox" name="totalCostTextBox" onfocus="blurTextBox();"></td>
+      </tr>
+    </table>
+    <hr/>
+    <h4>Payment Method:</h4>
+    <input type="radio" name="payment_method" value="visa" onchange="hideDiscover()" checked> Visa
+    <input type="radio" name="payment_method" value="MasterCard" onchange="hideDiscover()"> MasterCard
+    <input type="radio" name="payment_method" value="Discover" id="DisRB" onchange="showDiscover();"> Discover
+
+    <label id="discoverTB" for="discoverTextBox" style="display:none">
+      Please enter your input method <input type="text" class="paymentTB" name="discoverTextBox">
+      <span id="discoverWarning"></span>
+    </label>
+    <br/>
+    <input class="button" type="submit" value="submit"/>
+  </form>
+</div>
+</body>
+</html>
